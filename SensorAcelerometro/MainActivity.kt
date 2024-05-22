@@ -55,6 +55,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
             tvEjeX.text = "Eje X: $x"
             tvEjeY.text = "Eje X: $y"
             tvEjeZ.text = "Eje X: $z"
+        }else{
+
+                tvEjeY.text = "Sin Movimiento"
+            
         }
 
     }
