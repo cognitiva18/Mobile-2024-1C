@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         //Acceder a los métodos del sistema, en este caso de los sensores.
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
 
-        //Recibe la constat
+        //Recibe la constatante del tipo de sensor
         acelerometro = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 
         if(acelerometro != null) {
