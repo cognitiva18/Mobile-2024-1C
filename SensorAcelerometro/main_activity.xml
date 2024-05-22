@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acelerómetro loco"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/ejeEquis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Eje X"
+        android:textSize="24dp"
+        android:layout_below="@id/tvTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/ejeyGriega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Eje Y"
+        android:textSize="24dp"
+        android:layout_below="@id/ejeEquis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:id="@+id/ejeZeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Eje Z"
+        android:textSize="24dp"
+        android:layout_below="@id/ejeyGriega"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+
+</RelativeLayout>
