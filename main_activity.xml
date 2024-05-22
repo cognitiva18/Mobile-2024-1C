@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/etTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulario de Registro a Evento"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+    
+    
+    
+    <LinearLayout
+    android:id="@+id/llFormIngreso"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/etTitulo"
+    android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa tu nombre"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico" />
+    </LinearLayout>
+    
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/llFormIngreso"
+        android:layout_marginTop="16dp" > 
+        
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Opcion 1 Activa"
+                android:textOff="Desactivada" />
+
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Opcion 2 Activa"
+            android:textOff="Opcion 2 Desactivada" />
+    
+    
+    
+    
+    </LinearLayout>
+
+   
+
+    <!-- Centra el TV horizontalmente dentro del layout -->
+
+   <LinearLayout
+       android:id="@+id/llButonesDeAccion"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@id/llFormIngreso"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="24dp" >
+
+       <Button
+           android:id="@+id/btnEnviar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Enviar"
+           android:layout_marginTop="20dp" />
+
+
+       <Space
+           android:layout_width="16dp"
+           android:layout_height="wrap_content" />
+
+       <Button
+           android:id="@+id/btnCancelar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cancelar"
+           android:layout_marginStart="34dp"
+           android:layout_marginTop="20dp" />
+   </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pato"
+        android:layout_below="@id/llButonesDeAccion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+
+        />
+
+</RelativeLayout>
+
+
+
+
+
+CORREGIR VISUAL!!!!!
